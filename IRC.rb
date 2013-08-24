@@ -24,8 +24,6 @@ until irc_server.eof? do
 		wasGreeted = true if msg.include? g
   	end
 
- 
-
 	if msg.include? greeting_prefix and wasGreeted
 		response = "what..."
 		msg = msg.split("privmsg #bitmaker :")
