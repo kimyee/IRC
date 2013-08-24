@@ -16,6 +16,7 @@ irc_server.puts "JOIN #{channel}"
 
 until irc_server.eof? do
 	msg = irc_server.gets.downcase
+	#binding pry
 	puts msg
 	
 	wasGreeted = false
